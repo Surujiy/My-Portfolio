@@ -1,0 +1,18 @@
+<head> 
+  <meta name="dj4e" content="b9c72b87254f0b30ae977c99e10b729e"> 
+</head>
+{% extends "base_menu.html" %}
+
+{% block content %}
+
+<h1>Delete Auto</h1>
+
+
+<p>Are you sure you want to delete the cat <:( : {{ cat }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="Yes, delete >:\ .">
+</form>
+
+{% endblock %}

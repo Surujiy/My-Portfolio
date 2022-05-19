@@ -1,0 +1,564 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Sen', sans-serif;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  color: #333;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1 {
+  font-size: 62px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+}
+
+h2  {
+  font-size: 45px;
+  color: #333;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;   
+}
+
+.wrapper {
+  max-width: 1170px;
+  max-width: 1170px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+.header__container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__covid {
+  background-color: #222222;
+  height: 74px;
+}
+
+.header__covid__content {
+  max-width: 30%;
+  min-width: 520px;
+  padding-top: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button__link {
+  color: white;
+  text-align: center;
+}
+
+.header__button {
+  background-color: #eb5757;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  border-radius: 100px;
+  line-height: 33px;
+}
+
+.covid__announce {
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 18px;
+}
+
+.header__menu__content {
+  display: flex;
+  justify-content: space-between;
+  min-width: 760px;
+}
+
+.header__link {
+  margin-top: 22px;
+}
+
+.header__menu {
+  height: 73px;
+  background-color: #eb5757;
+}
+
+.header__options {
+  width: 575px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  line-height: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.option:hover {
+  height: 33px;
+  background-color: #222;
+  transition: 0.5s;
+}
+
+.header__list {
+  width: 485px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options__link {
+  color: white;
+}
+
+.header__cart {
+  width: 50px;
+  height: 33px;
+  background-color: #222222;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-left: 14px;
+}
+
+.cart__icon {
+  width: 20px;
+}
+
+.header__cart__counter {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 100px;
+  padding-left: 6px;
+  margin-top: -35px;
+  margin-left: 25px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.merch {
+  background: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url(static/img/Hero_Background.jpg) center center / cover no-repeat;
+  margin-top: 145px;
+}
+
+.merch__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: auto
+}
+
+.merch__text {
+  padding: 150px 20px 130px 20px;
+  margin: 0 auto 0 0;
+}
+
+.merch__headline {
+  margin-bottom: 10px;
+}
+
+.merch__paragraph {
+  margin-bottom: 30px;
+}
+
+.merch__button {
+  padding: 5px 25px 5px 25px;
+  border: solid white 1px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.merch__button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+} 
+
+.donate {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.donate__container {
+  max-width: 1190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.donate__article {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.donate__headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.donate__options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.donate__paragraph {
+  width: 42%;
+}
+
+.donate__block {
+  padding: 0 20px 0 20px;
+  max-width: 90%;
+  width: 100%;
+}
+
+.donate__picture {
+  height: 350px;
+  border-radius: 5px;
+  background-color: #222;
+  overflow: hidden;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.donate__image {
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+}
+
+.triangle {
+  bottom: -50px;
+  right: -30px;
+}
+
+.square {
+  bottom: -105px;
+  right: -35px;
+}
+
+.circle {
+  right: -75px;
+  bottom: -75px;
+}
+
+.donate__picture__font {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.donate__picture__number {
+  margin: 50px 0 0 35px;
+}
+
+.donate__picture__headline {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+}
+
+.donate__block__paragraph {
+  width: inherit;
+}
+
+.covid {
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url(static/img/Covid_Announce.jpg) center center / cover no-repeat;
+  margin-bottom: 90px;
+}
+
+.covid__block {
+  margin: auto;
+  min-width: 760px;
+}
+
+.covid__container h2, p {
+  color: white;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.covid__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 0 0 auto;
+  padding-top: 135px;
+  padding-bottom: 135px;
+}
+
+.covid__container p {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.button__white {
+  background-color: white;
+  color: #222222;
+}
+
+.button__white:hover {
+  background-color: #eb5757;
+  color: white;
+  transition: 0.5s;
+  border-color: #eb5757;
+}
+
+.shop {
+  margin-bottom: 130px;
+  min-width: 760px;
+}
+
+.shop__heading {
+  margin-bottom: 40px;
+}
+
+.product__block {
+  position: relative;
+  width: 32%;
+}
+
+.product__card {
+  height: 500px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.tent {
+  background: url(static/img/Tent.jpg) center center / cover no-repeat;
+}
+
+.cup {
+    background: url(static/img/Cup.jpg) center left 80% / cover no-repeat;
+}
+
+.backpack {
+  background: url(static/img/Backpack.jpg) center center / cover no-repeat;
+}
+
+.shop__products {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  min-width: 760px;
+}
+
+.product__description {
+  text-align: center;
+}
+
+.product__sale__banner {
+  background: #eb5757;
+  color: white;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button__red {
+  background-color: #eb5757;
+}
+
+.button__red:hover {
+  background-color: #222;
+  color: white;
+}
+
+.button__black {
+  background-color: #222;
+}
+
+.button__black:hover {
+  background-color: #eb5757;
+  color: white;
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+
+.product__heading {
+  font-size: 20px;
+}
+
+.product__price {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product__sale {
+  text-decoration: line-through;
+  color: #eb5757;
+}
+
+.product__price__block {
+  margin: auto;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.article__block {
+  background-color: #222;
+  width: 80%;
+  margin: 0 0 0 auto;
+  border-radius: 5px;
+}
+
+.article__content {
+  padding: 50px 50px 40px 270px;
+  white-space: normal;
+}
+
+.article__picture {
+  background: url(static/img/Woman.jpg) top 80% right 30% / contain no-repeat;
+  background-size: 275%;
+  width: 350px;
+  height: 440px;
+  border-radius: 5px;
+  position: absolute;
+  top: 35px;
+}
+
+.article__heading {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.article__content p span {
+  font-weight: bold;
+}
+
+.article__content p {
+  width: 75%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #222;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.contact {
+  width: 30px;
+}
